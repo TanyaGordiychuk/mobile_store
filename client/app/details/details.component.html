@@ -1,0 +1,18 @@
+<div class="details">
+    <div class="item-details__content">
+        <div class="item-details__image">
+            <img ng-src="http://localhost:4001/api/v1/{{$ctrl.item.images[0]}}">
+        </div>
+        <div class="item-details__right">
+            <div class="item-details__name">
+                {{$ctrl.item.name}}
+            </div>
+            <div class="item-details__description">
+                {{$ctrl.item.description}}
+            </div>
+            <div class="item-details__price">
+                {{$ctrl.item.price | currency: "$ ": 0}}
+            </div>
+        </div>
+    </div>
+</div>

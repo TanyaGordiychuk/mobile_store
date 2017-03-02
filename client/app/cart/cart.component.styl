@@ -1,0 +1,71 @@
+@import"../variables.styl";
+
+.cart
+    width 100%
+    max-width 960px
+    margin 0 auto
+
+.cart-title
+    color $darkRedColor
+    font-size 35px
+
+.cart-item
+    &__wrapper
+        box-sizing border-box
+        border 2px solid $darkRedColor
+        border-radius 4px
+        height 180px
+        width 100%
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        align-items center
+        margin 20px 0
+        color $darkRedColor
+    &__image
+        height 100%
+        position relative
+        > img
+            height 100%
+            box-sizing border-box
+            padding 0 50px
+    &__name
+        color $baseTextColor
+        font-size 22px
+        font-weight 800
+    &__price
+        box-sizing border-box
+        margin 0 45px
+        border 2px solid $yellowColor
+        border-radius 4px
+        padding 15px
+        font-weight 800
+
+.total
+    float right
+    background $reallyLightYellow
+    border-radius 4px
+    &_price
+        font-size 27px
+        font-weight 700
+        color $darkRedColor
+        text-align center
+        padding-top 13px
+
+.checkout-btn
+    padding 10px 50px
+    >button
+        background $yellowColor
+        color $baseTextColor
+        font-size 18px
+        font-weight 700
+        height 45px
+        width 130px
+        border none
+        border-radius 4px
+        margin-bottom 10px
+        &:hover
+            background $lightYellowColor
+
+    
+			

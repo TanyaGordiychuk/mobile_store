@@ -1,0 +1,33 @@
+.tabs
+	width 100%
+	position relative
+	display table
+	&__controlls
+		display flex
+		position relative
+		&-indicator
+			position absolute
+			height 5px
+			bottom 0
+			background-color red
+			width 50px
+			transition all .3s
+	&__control
+		padding 5px 10px
+		text-align center
+		color #2bef1a
+		cursor pointer
+		border 1px solid blue
+	&__content
+		min-height 100%
+		position relative
+		padding 0 10px
+		&-tab
+			opacity 0
+			min-height 100%
+			position absolute
+			top 0
+			left 0
+			transition opacity 0.3s
+			&_active
+				opacity 1

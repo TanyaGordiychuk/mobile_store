@@ -1,0 +1,5 @@
+<div class="catalog">
+    <div ng-repeat="item_inn in $ctrl.items" class="catalog__element">
+        <app-catalog-item component-item="item_inn" on-add="$ctrl.addItemToCart(catalogItem)" to-state="$ctrl.toDetails(id)"></app-catalog-item>
+    </div>
+</div>
