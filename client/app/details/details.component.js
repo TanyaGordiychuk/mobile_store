@@ -11,7 +11,6 @@ class Controller {
             this.item = resp.data;
             console.log(this.item.images[0]);
         })
-
     }
 }
 

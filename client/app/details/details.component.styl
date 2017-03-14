@@ -3,12 +3,12 @@
 .details
 	width 100%
 	max-width 960px
+	min-width 320px
 	margin 0 auto
 
 .item-details
 	&__content
-		border 1px solid #313131
-		margin 10% auto
+		margin 0 auto
 		min-height 500px
 		display flex
 		flex-wrap wrap
@@ -17,13 +17,20 @@
 		height 100%
 		max-width 50%
 		min-width 290px
-		position relative
+		@media screen and (max-width: 580px)
+			min-width 70%
+			margin 0 auto
 		>img 
 			width 100%
 	&__right
 		max-width 50%
 		min-width 49%
-
+		@media screen and (max-width: 960px)
+			box-sizing border-box
+			padding 0 20px
+		@media screen and (max-width: 580px)
+			min-width 100%
+			padding 0 30px
 	&__name
 		color $baseTextColor
 		font-size 30px
@@ -34,4 +41,7 @@
 		text-align justify
 	&__price
 		text-align end
+		color $yellowColor
+		font-size 40px
+		
 		

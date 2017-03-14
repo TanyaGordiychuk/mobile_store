@@ -11,9 +11,11 @@ import { OrderComponent } from "./order/order.component";
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CatalogItemComponent } from "./components/catalog-item/catalog-item.component";
+import { ItemCommentComponent } from "./components/item-comment/item-comment.component";
 
 import { CartService } from "./app/app.cart.service";
 import { DetailsService } from "./app/app.details.service";
+import { CommentsService } from "./app/app.comments.service";
 
 import "./variables.styl";
 import "./app.styl";
@@ -29,7 +31,9 @@ angular.module("client", [uiRouter])
     .component("appNavbar", NavbarComponent)
     .component("appDetails", DetailsComponent)
     .component("appCatalogItem", CatalogItemComponent)
+    .component("appItemComment", ItemCommentComponent)
     .component("appOrder", OrderComponent)
     .service("cartService", CartService)
     .service("detailsService", DetailsService)
+    .service("commentsService", CommentsService)
     .run();
