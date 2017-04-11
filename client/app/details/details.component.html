@@ -7,13 +7,24 @@
             <div class="item-details__name">
                 {{$ctrl.item.name}}
             </div>
+           <div class="screen">
+                <p>Screen:</p> {{$ctrl.item.display.screenSize}},{{$ctrl.item.display.screenResolution}}
+            </div>
+            <div class="android">
+                <p>OS:</p> {{$ctrl.item.android.os}}
+            </div>
+            <div class="camera">
+                <p>Camera:</p> {{$ctrl.item.camera.primary}}
+            </div>
+        </div>
+
             <div class="item-details__description">
-                {{$ctrl.item.description}}
+                {{$ctrl.item.description[0]}}
             </div>
             <div class="item-details__price">
                 {{$ctrl.item.price | currency: "$ ": 0}}
             </div>
-        </div>
+        
     </div>
     <div ng-repeat="comment in $ctrl.comments">
         <app-item-comment></app-item-comment>

@@ -1,13 +1,11 @@
 class CommentsService {
-    constructor() {
-        this.inputComment = {};
+    constructor($http) {
+        this.baseUrl = "http://localhost:4001/api/v1/comments";
+        this.$http = $http;
     }
-
-    addComment(comment){
-            this.comments.push(this.inputComment);
-            this.inputComment = {};
-        };
-    
+    getComments(id) {
+        return this.$http
+            .get(this.baseUrl+`/${id}`);
+    }
 }
-
 export {CommentsService};

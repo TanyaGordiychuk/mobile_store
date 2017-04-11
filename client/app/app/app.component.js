@@ -27,8 +27,6 @@ class Controller {
 
         return total;
     }
-
-
 }
 
 const AppComponent = {

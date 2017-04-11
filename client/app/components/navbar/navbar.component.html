@@ -5,7 +5,7 @@
             <p>Catalog</p>
         </a>
         <a class="btn_cart" ui-sref="cart">
-            <img src="cart2.png" class="cart_img" title="Go to cart"> {{$ctrl.totalPrice}}
+            <img src="cart2.png" class="cart_img" title="Go to cart"> {{$ctrl.totalPrice | currency: "$ ": 0}}
         </a>
     </div>
 </div>
