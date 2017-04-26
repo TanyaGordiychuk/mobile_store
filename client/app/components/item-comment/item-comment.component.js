@@ -6,7 +6,7 @@ class Controller {
 
     this.inputComment = {};
     }
-
+//добавление комментариев
     addComment(comment) {
             this.comments.push(this.inputComment);
             this.inputComment = {};
